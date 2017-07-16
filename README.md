@@ -1,4 +1,4 @@
-# cmh:software website
+# cmh:apps website
 
 ### Projects
 
