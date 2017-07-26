@@ -12,12 +12,16 @@ a:hover {
   color: #fff;
 }
 
-.panel-body {
-  background: #333;
-}
-
 .panel > .panel-heading {
   background-image: none;
   background-color: #333;
   color: #fff;
+}
+
+.panel-body {
+  background: #333;
+}
+
+.img-thumbnail {
+  background-color:transparent
 }
