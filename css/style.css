@@ -1,12 +1,13 @@
 body {
   padding-top: 6px;
-  background-color: #fff;
+  color: #ccc;
+  background-color: #333;
 }
 
 a {
-  color: #333;
+  color: #ccc;
 }
 
 a:hover {
-  color: #333;
+  color: #ccc;
 }
