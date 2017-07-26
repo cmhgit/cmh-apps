@@ -11,3 +11,7 @@ a {
 a:hover {
   color: #333;
 }
+
+.panel-body {
+  background: #333;
+}
