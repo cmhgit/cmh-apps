@@ -14,7 +14,7 @@ a:hover {
 
 .panel > .panel-heading {
   background-image: none;
-  background-color: #333;
+  background-color: #444;
   color: #fff;
 }
 
@@ -23,6 +23,6 @@ a:hover {
 }
 
 .thumbnail {
-  background-color: #333;
+  background-color: #444;
   color: #fff;
 }
