@@ -12,6 +12,10 @@ a:hover {
   color: #333;
 }
 
+.panel-heading {
+  background: #555;
+}
+
 .panel-body {
   background: #333;
 }
