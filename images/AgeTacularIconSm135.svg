@@ -13,7 +13,7 @@
           </linearGradient>
       </defs>
  
-      <rect x="4" y="4" width="1016px" height="1016px" rx="40" ry="40"
+      <rect x="4" y="4" width="1016px" height="1016px" rx="200" ry="200"
           style="fill:url(#myLinearGradient3); stroke: white; stroke-width: 8;" />
 
   <path id="Selection"
