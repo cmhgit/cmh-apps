@@ -5,11 +5,12 @@ body {
 }
 
 a {
-  color: #ddd;
+  color: #fff;
+  text-decoration: yes;
 }
 
 a:hover {
-  color: #ddd;
+  color: #fff;
 }
 
 .panel > .panel-heading {
