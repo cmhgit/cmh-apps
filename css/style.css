@@ -6,7 +6,7 @@ body {
 
 a {
   color: #fff;
-  text-decoration: yes;
+  text-decoration: underline;
 }
 
 a:hover {
