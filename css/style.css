@@ -5,11 +5,11 @@ body {
 }
 
 a {
-  color: #3e79f5;
+  color: #eee;
 }
 
 a:hover {
-  color: #40479e;
+  color: #eee;
 }
 
 .panel > .panel-heading {
