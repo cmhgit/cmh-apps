@@ -5,13 +5,13 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #785549;
   text-decoration: none;
   /* text-decoration: underline; */
 }
 
 a:hover {
-  color: #fff;
+  color: #785549;
 }
 
 .panel > .panel-heading {
