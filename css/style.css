@@ -25,6 +25,9 @@ a:hover {
 }
 
 .thumbnail {
+  border: 0 none;
+  box-shadow: none;
   background-color: #333;
   color: #fff;
 }
+
