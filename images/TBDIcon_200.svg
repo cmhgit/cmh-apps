@@ -8,8 +8,8 @@
 
       <defs>
           <linearGradient id="myLinearGradient3" x1="0%" y1="0%" x2="100%" y2="100%" spreadMethod="pad">
-             <stop offset="0%"   stop-color="#666" stop-opacity="1"/>
-             <stop offset="100%" stop-color="#222" stop-opacity="1" />
+             <stop offset="0%"   stop-color="#222" stop-opacity="1"/>
+             <stop offset="100%" stop-color="#666" stop-opacity="1" />
           </linearGradient>
       </defs>
  
