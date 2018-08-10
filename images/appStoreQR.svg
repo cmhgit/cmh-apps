@@ -3,8 +3,19 @@
               "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1.66646in" height="1.66646in"
+     width="120px" height="120.px"
      viewBox="0 0 120 120">
+
+      <defs>
+          <linearGradient id="myLinearGradient" x1="0%" y1="0%" x2="100%" y2="100%" spreadMethod="pad">
+             <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+             <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+          </linearGradient>
+      </defs>
+ 
+      <rect x="1" y="1" width="120px" height="120px"
+          style="fill:url(#myLinearGradient); stroke: white; stroke-width: 1;" />
+
   <path id="Selection"
         fill="black" stroke="black" stroke-width="1"
         d="M 30.00,2.00
