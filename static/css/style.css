@@ -1,0 +1,38 @@
+body {
+  padding-top: 6px;
+  color: #fff;
+  background-color: #333;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  /* text-decoration: underline; */
+}
+
+a:hover {
+  color: #fff;
+}
+
+.panel > .panel-heading {
+  background-image: none;
+  background-color: #444;
+  color: #fff;
+}
+
+.panel-body {
+  background: #333;
+}
+
+.thumbnail {
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.img-max {
+  max-width: 400px;
+  width:100%;
+}

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main>
+  <div>
+   <h1>{{ .Title }}</h1>
+        <ul>
+            {{ range .Pages }}
+                {{ .Render "li"}}
+            {{ end }}
+        </ul>
+  </div>
+  <p>--This is coming from layouts/section/apps.html</p>
+</main>
+{{ end }}

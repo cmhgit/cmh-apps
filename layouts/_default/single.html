@@ -1,0 +1,19 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<div class="container-fluid">
+
+  {{ with .Params.icon }}
+  <div>
+      <img src="{{ . }}">
+  </div>
+  {{ end }}
+
+  <h1>{{ .Title }}</h1>
+  <p>This is coming from single.html</p>
+</div>
+<div class="container-fluid">
+  {{ .Content }}
+</div>
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+      <div class="container-fluid">
+        <h1>{{.Title}}</h1>
+        {{ with .Params.subtitle }}
+          <span class="subtitle">{{.}}</span>
+        {{ end }}
+      </div>
+      <div class="container-fluid">
+        {{.Content}}
+      </div>
+      <div class="container-fluid">
+        <p>(this is in layouts/index.html)</p>
+        {{ range first 2 .Site.RegularPages }}
+            {{ .Render "summary"}}
+        {{ end }}
+      </div>
+{{ end }}
