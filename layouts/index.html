@@ -1,15 +1,24 @@
 {{ define "main" }}
       <div class="container-fluid">
-        <h1>{{.Title}}</h1>
-        {{ with .Params.subtitle }}
-          <span class="subtitle">{{.}}</span>
-        {{ end }}
+        <div class="container-fluid">
+          {{ with .Params.icon }}
+            <p class="text-center"><img src="{{ . }}" class="img-fluid"></p>
+          {{ else }}
+            <p>&nbsp;</p>
+            <p class="h1 text-center">{{.Title}}</p>
+          {{ end }}
+        </div>
+        <div class="container-fluid">
+          {{ with .Params.subtitle }}
+            <p class="text-center">{{.}}</p>
+          {{ end }}
+        </div>
       </div>
       <div class="container-fluid">
         {{.Content}}
       </div>
       <div class="container-fluid">
-        <p>(this is in layouts/index.html)</p>
+        <p>&nbsp;</p>
         {{ range first 2 .Site.RegularPages }}
             {{ .Render "summary"}}
         {{ end }}

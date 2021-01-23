@@ -1,27 +1,31 @@
 <div class="container-fluid">
-  <ul class="d-none d-md-block list-inline text-center">
-    <li class="h6 list-inline-item"><small>Copyright &copy; {{ now.Format "2006"}} Chad Hughes. All rights reserved.</small></li>
-{{ range .Site.Menus.main }}
-    <li class="h6 list-inline-item"><small>•</small></li>
-    <li class="h6 list-inline-item"><small><a href="{{ .URL }}">{{ .Name }}</a></small></li>
-{{ end }}
-  </ul>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p class="text-center"><small class="text-muted">Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</small></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-auto">
+      <p class="h6 text-center"><small>Copyright &copy; {{ now.Format "2006" }} Chad Hughes. All rights reserved.</small></p>
+    </div>
+    {{ range .Site.Menus.main }}
+      <div class="col-sm">
+        <p class="h6 text-center"><small><a href="{{ .URL }}">{{ .Name }}</a></small></p>
+      </div>
+    {{ end }}
+  </div>
 </div>
-
-<div class="d-md-none">
-  <p class="h6 text-center"><small>Copyright &copy; {{ now.Format "2006" }} Chad Hughes. All rights reserved.</small></p>
-  <ul class="list-inline text-center">
-    <li class="h6 list-inline-item"><small>•</small></li>
-{{ range .Site.Menus.main }}
-    <li class="h6 list-inline-item"><small><a href="{{ .URL }}">{{ .Name }}</a></small></li>
-    <li class="h6 list-inline-item"><small>•</small></li>
-{{ end }}
-  </ul>
-</div>
-
-<div class="container-fluid">
-  {{/* <p class="text-center"><br>&nbsp;</p> */}}
-  <p class="text-center"><small class="text-muted">Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</small></p>
 </div>
 
 {{/*
