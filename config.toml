@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "cmh:apps"
 
 paginate = 2
+[params]
+  homeNumPosts = 2
 
 #[social]
   #twitter = "https://twitter.com/cmhApps"
