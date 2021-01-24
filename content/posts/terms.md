@@ -2,7 +2,7 @@
 title: "Terms"
 date: 2021-01-20T17:49:02-08:00
 lastmod: 2017-11-11
-icon: ""
+icon: "/images/terms.jpg"
 draft: true
 tags: ["terms and conditions"]
 weight: 90

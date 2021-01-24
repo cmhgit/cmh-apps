@@ -2,7 +2,7 @@
 title: "Privacy"
 date: 2021-01-20T17:48:57-08:00
 lastmod: 2019-07-18
-icon: "/images/AgeTacularIcon.svg"
+icon: "/images/privacy.jpg"
 tags: ["privacy policy"]
 weight: 100
 draft: true
