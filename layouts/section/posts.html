@@ -1,13 +1,11 @@
 {{ define "main" }}
-<main>
-  <div>
-   <h1>{{ .Title }}</h1>
-        <ul>
-            {{ range .Pages }}
-                {{ .Render "li"}}
-            {{ end }}
-        </ul>
+  <div class="container-fluid">
+    <p class="h1">{{ .Title }}</p>
+          <ul>
+              {{ range .Pages }}
+                  {{ .Render "li"}}
+              {{ end }}
+          </ul>
+    <p>(This is coming from layouts/section/posts.html)</p>
   </div>
-  <p>--This is coming from layouts/section/posts.html</p>
-</main>
 {{ end }}

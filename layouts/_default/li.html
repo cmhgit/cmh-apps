@@ -1,4 +1,12 @@
-<li>
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
-  <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-</li>
+<div class="card text-white bg-transparent border-0 mb-4">
+  <div class="card-body">
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ with .Params.lastmod }}
+        <div>{{ .Format "Mon, Jan 2, 2006" }}</div>
+      {{ else }}
+        <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+      {{ end }}
+    </li>
+  </div>
+</div>
