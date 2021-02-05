@@ -21,18 +21,19 @@
       </div>
       <div class="container-fluid">
         <p>&nbsp;</p>
-              <div class="container-fluid">
-        <div class="row">
-          {{ if .Site.Params.homeNumPosts }}
-            {{ range first .Site.Params.homeNumPosts .Site.RegularPages }}
-                {{ .Render "summary"}}
+
+        <div class="container-fluid">
+          <div class="row">
+            {{ if .Site.Params.homeNumPosts }}
+              {{ range first .Site.Params.homeNumPosts .Site.RegularPages }}
+                  {{ .Render "summary"}}
+              {{ end }}
+            {{ else }}
+              {{ range first 4 .Site.RegularPages }}
+                  {{ .Render "summary"}}
+              {{ end }}
             {{ end }}
-          {{ else }}
-            {{ range first 4 .Site.RegularPages }}
-                {{ .Render "summary"}}
-            {{ end }}
-          {{ end }}
-        </div>
+          </div>
         </div>
       </div>
 {{ end }}
