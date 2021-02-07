@@ -33,9 +33,11 @@ summary: "Simple and elegant age tracking of family, loved ones, and past and fu
 [![Text](/images/appStoreQR.svg "AgeTacular")](https://apps.apple.com/us/app/agetacular/id1252149243)
 {{< /comment >}}
 
+{{< comment Social >}}
 ## Follow Us
 {{< tweet 1358507560228163584 >}}
+{{< /comment >}}
 
 ## Support & FAQ
 
-Head over to [Support & FAQ](/posts/agetacularsupport/) if you're looking for {{< underlineLink href="/posts/agetacularsupport/" text="support" >}}
+Head over to [Support & FAQ](/posts/agetacular-support/) if you're looking for {{< underlineLink href="/posts/agetacular-support/" text="support" >}}

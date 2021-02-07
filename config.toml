@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://cmh-apps.com/"
 languageCode = "en-us"
 title = "cmh:apps"
 
@@ -6,8 +6,6 @@ title = "cmh:apps"
 paginate = 2
 [params]
   homeNumPosts = 2
-
-
 
 #[social]
   #twitter = "https://twitter.com/cmhApps"
@@ -23,7 +21,6 @@ paginate = 2
 #[params]
 #  custom_css = ["css/myCSS.css"]
 #  custom_css = ["css/myCSS.css", "css/bar.css"]
-
 
 ## sectionPagesMenu = "main"
 [[menu.main]]
@@ -55,7 +52,7 @@ paginate = 2
   [privacy.instagram]
     disable = true
   [privacy.twitter]
-    disable = false
+    disable = true
   [privacy.vimeo]
     disable = true
   [privacy.youtube]

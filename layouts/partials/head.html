@@ -1,6 +1,16 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+  {{/* <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title> */}}
+  <title>{{ block "title" . }}
+            {{ if eq .Params.Title .Site.Title}}
+              {{ .Site.Title }}
+            {{ else }}
+              {{ with .Params.Title }}
+                {{ . }} |
+              {{ end }}
+            {{ .Site.Title }}
+            {{ end }}
+         {{ end }}</title>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ with .Params.appStore }}
