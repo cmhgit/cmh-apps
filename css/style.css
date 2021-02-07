@@ -1,5 +1,6 @@
 body {
-  padding-top: 6px;
+  /* padding-top: 6px; */
+  padding-bottom: 6px;
   color: #fff;
   background-color: #333;
 }
@@ -11,9 +12,10 @@ a {
 }
 
 a:hover {
-  color: #fff;
+  color: #ccc;
 }
 
+/*
 .panel > .panel-heading {
   background-image: none;
   background-color: #444;
@@ -35,4 +37,4 @@ a:hover {
 .img-max {
   max-width: 400px;
   width:100%;
-}
+} */
