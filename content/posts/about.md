@@ -6,4 +6,5 @@ icon: "/images/cmh-appsIcon.svg"
 draft: true
 tags: ["about"]
 weight: 80
+summary: "About"
 ---

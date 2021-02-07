@@ -4,12 +4,9 @@
   <div class="container-fluid">
     <p class="h1">{{ .Title }}</p>
     <hr>
-
-              {{ range .Pages }}
-                  {{ .Render "summary"}}
-              {{ end }}
-
-    <p>(This is coming from layouts/section/apps.html)</p>
+    {{ range .Pages }}
+        {{ .Render "summary"}}
+    {{ end }}
   </div>
 </div>
 {{ end }}

@@ -3,7 +3,7 @@
               "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="120px" height="120px"
+     width="1024px" height="1024px"
      viewBox="0 0 300 300">
 
       <defs>
@@ -12,7 +12,7 @@
              <stop offset="100%" stop-color="#444" stop-opacity="1" />
           </linearGradient>
       </defs>
- 
+
       <rect x="1" y="1" width="298px" height="298px" rx="57" ry="57"
           style="fill:url(#myLinearGradient3); stroke: white; stroke-width: 2;" />
 

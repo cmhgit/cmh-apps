@@ -6,6 +6,7 @@ icon: "/images/privacy.jpg"
 tags: ["privacy policy"]
 weight: 100
 draft: true
+summary: "Privacy Policy"
 ---
 
 ##### Terms

@@ -6,6 +6,7 @@ icon: "/images/TBDIcon.svg"
 draft: true
 tags: ["apps"]
 weight: 20
+summary: "Coming Soon!"
 ---
 
-_COMING SOON!_
+_Coming Soon!_

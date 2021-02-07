@@ -6,6 +6,7 @@ icon: "/images/terms.jpg"
 draft: true
 tags: ["terms and conditions"]
 weight: 90
+summary: "Terms and Conditions"
 ---
 
 ##### Terms
