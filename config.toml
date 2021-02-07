@@ -2,9 +2,12 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "cmh:apps"
 
+summaryLength = 30
 paginate = 2
 [params]
   homeNumPosts = 2
+
+
 
 #[social]
   #twitter = "https://twitter.com/cmhApps"
@@ -52,7 +55,7 @@ paginate = 2
   [privacy.instagram]
     disable = true
   [privacy.twitter]
-    disable = true
+    disable = false
   [privacy.vimeo]
     disable = true
   [privacy.youtube]

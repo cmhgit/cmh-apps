@@ -1,12 +1,10 @@
-<div class="card text-white bg-transparent border-0 mb-4">
-  <div class="card-body">
-    <li>
+<div class="container-fluid">
+  <div class="container-fluid">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
       {{ with .Params.lastmod }}
         <div>{{ .Format "Mon, Jan 2, 2006" }}</div>
       {{ else }}
-        <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+        <div><small>{{ .Date.Format "Mon, Jan 2, 2006" }}</small></div>
       {{ end }}
-    </li>
   </div>
 </div>

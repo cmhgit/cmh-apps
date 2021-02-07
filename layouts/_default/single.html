@@ -2,21 +2,32 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-  <div class="container-fluid">
-    <div class="card text-white bg-transparent border-0 mb-4 w-100">
-      <div class="card-body">
-
-        {{ with .Params.icon }}
-            <img src="{{ . }}">
-            <p>&nbsp;</p>
-        {{ end }}
-
-        <p class="h1">{{ .Title }}</p>
-        <p>(This is coming from single.html)</p>
-
-        {{ .Content }}
-
-      </div>
+  <div class=container-fluid>
+    <p>&nbsp;</p>
+    <div class=container-fluid>
+        <div class="row">
+          {{ if .Params.icon }}
+            <div class="col-sm-3 align-self-end">
+              <img src="{{ .Params.icon }}" class="img-fluid">
+            </div>
+            <div class="col-sm-auto">
+              <p>&nbsp;</p>
+            </div>
+            <div class="col-sm align-self-end">
+              <p class="h1">{{ .Title }}</p>
+            </div>
+          {{ else }}
+            <div class="col-sm align-self-end">
+              <p class="h1">{{ .Title }}</p>
+            </div>
+          {{ end }}
+        </div>
     </div>
+
+    <div class="container-fluid">
+      <p>&nbsp;</p>
+      {{ .Content }}
+    </div>
+
   </div>
 {{ end }}

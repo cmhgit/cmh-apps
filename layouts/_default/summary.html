@@ -1,21 +1,40 @@
 <div class="col-lg">
 <div class="card text-white bg-transparent border-0 mb-4 w-100">
   <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-md-2">
+      <a href="{{ .Permalink }}">
       {{ with .Params.icon }}
-          <img src="{{ . }}" class="card-img w-75 mx-auto d-block">
+          <img src="{{ . }}" class="card-img w-100 mx-auto d-block">
       {{ else }}
           <p>&nbsp;</p>
       {{ end }}
+      </a>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-10">
       <div class="card-body">
-        <h5 class="card-title">{{ .Title }}</h5>
-        <p class="card-text">{{ .Summary }}</p>
-        <p class="card-text"><small class="text-muted">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .FuzzyWordCount }} Words</small></p>
-        <p class="card-text text-left"><a href="{{ .Permalink }}" class="btn btn-primary">Learn more →</a></p>
+        {{ if .Params.lastmod }}
+          <a href="{{ .Permalink }}"><h3 class="card-title">{{ .Title }}</h3></a>
+          {{ with .Summary }}
+          <p class="card-text">{{ . }} ... </p>
+          {{ end }}
+          <p class="card-text"><small class="text-muted">{{ .Params.lastmod.Format "2 Jan 2006" }}</small></p>
+          <p class="card-text text-start"><a href="{{ .Permalink }}" class="btn btn-outline-secondary">More →</a></p>
+
+        {{ else if .Params.Date }}
+          <a href="{{ .Permalink }}"><h3 class="card-title">{{ .Title }}</h3></a>
+          {{ with .Summary }}
+          <p class="card-text">{{ . }} ... </p>
+          {{ end }}
+          <p class="card-text"><small class="text-muted">{{ .Params.Date.Format "2 Jan 2006" }}</small></p>
+          <p class="card-text text-start"><a href="{{ .Permalink }}" class="btn btn-outline-secondary">More →</a></p>
+
+        {{ else }}
+          <p class="card-text text-start"><a href="{{ .Permalink }}" class="btn btn-outline-secondary">{{ .Title }}</a></p>
+        {{ end }}
       </div>
     </div>
   </div>
 </div>
 </div>
+
+{{/* <p class="card-text"><small class="text-muted">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .FuzzyWordCount }} Words</small></p> */}}

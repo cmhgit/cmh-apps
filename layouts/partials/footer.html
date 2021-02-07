@@ -1,32 +1,52 @@
 <div class="container-fluid">
   <div class="container-fluid">
     <hr>
-  <!-- <div class="row">
-    <div class="col">
-      <p>&nbsp;</p>
-    </div>
-  </div> -->
-  <div class="row">
-    <div class="col">
-      <p class="text-start"><small class="text-muted">Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</small></p>
-    </div>
-  </div>
-  <!-- <div class="row">
-    <div class="col">
-      <p>&nbsp;</p>
-    </div>
-  </div> -->
-  <div class="row">
-    <div class="col-md-auto">
-      <p class="h6 text-center"><small>Copyright &copy; {{ now.Format "2006" }} Chad Hughes. All rights reserved.</small></p>
-    </div>
-    {{ range .Site.Menus.main }}
-      <div class="col-sm">
-        <p class="h6 text-center"><small><a href="{{ .URL }}">{{ .Name }}</a></small></p>
+
+    {{/* <div class="row">
+      <div class="col">
+        <p>&nbsp;</p>
       </div>
-    {{ end }}
+    </div> */}}
+
+    <div class="row">
+      <div class="col">
+        <p class="fs-6 text-start fw-light text-muted">Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</p>
+      </div>
+    </div>
+
+    {{/* <div class="row">
+      <div class="col">
+        <p>&nbsp;</p>
+      </div>
+    </div> */}}
+
+    {{/* display on all but small */}}
+    <div class="d-none d-sm-block">
+      <div class="row">
+        <div class="col-md-auto">
+          <p class="h6 text-center fw-light">Copyright &copy; {{ now.Format "2006" }} Chad Hughes. All rights reserved.</p>
+        </div>
+        {{ range .Site.Menus.main }}
+          <div class="col-sm">
+            <p class="h6 text-center fw-light"><a href="{{ .URL }}">{{ .Name }}</a></p>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    {{/* display only on small */}}
+    <div class="d-sm-none">
+      <div class="row">
+        {{ range .Site.Menus.main }}
+          <div class="col-sm">
+            <p class="h6 text-center fw-light"><a href="{{ .URL }}">{{ .Name }}</a></p>
+          </div>
+        {{ end }}
+        <div class="col-md-auto">
+          <p class="h6 text-center fw-light">&copy; {{ now.Format "2006" }} Chad Hughes. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 </div>
 
 <link rel="stylesheet" href="/css/style.css">
