@@ -29,12 +29,12 @@ paginate = 2
 [[menu.main]]
   name = "Terms"
   weight = 10
-  url = "/posts/terms/"
+  url = "/terms/"
 
 [[menu.main]]
   name = "Privacy"
   weight = 20
-  url = "/posts/privacy/"
+  url = "/privacy/"
 
 [[menu.main]]
   name = "Tags"
