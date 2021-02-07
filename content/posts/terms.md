@@ -3,7 +3,7 @@ title: "Terms and Conditions"
 date: 2021-01-20T17:49:02-08:00
 lastmod: 2017-11-11
 icon: "/images/terms.jpg"
-draft: true
+draft: false
 tags: ["terms and conditions"]
 weight: 90
 summary: "Terms and Conditions"

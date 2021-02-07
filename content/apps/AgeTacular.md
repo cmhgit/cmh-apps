@@ -2,11 +2,11 @@
 title: "AgeTacular"
 date: 2021-01-22T00:45:54-08:00
 icon: "/images/AgeTacularIcon.svg"
-draft: true
+draft: false
 tags: ["apps"]
 appStore: "app-id=1252149243"
 weight: 10
-summary: "Simple and elegant age tracking of family, loved ones, and past and future events"
+summary: "Simple and elegant age tracking of family, loved ones, and past and future events."
 ---
 
 [![Text](/images/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg "AgeTacular")](https://apps.apple.com/us/app/agetacular/id1252149243)
@@ -34,7 +34,7 @@ summary: "Simple and elegant age tracking of family, loved ones, and past and fu
 {{< /comment >}}
 
 ## Follow Us
-{{< tweet 1358373572205371396 >}}
+{{< tweet 1358507560228163584 >}}
 
 ## Support & FAQ
 

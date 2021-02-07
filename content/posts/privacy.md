@@ -5,7 +5,7 @@ lastmod: 2019-07-18
 icon: "/images/privacy.jpg"
 tags: ["privacy policy"]
 weight: 100
-draft: true
+draft: false
 summary: "Privacy Policy"
 ---
 
