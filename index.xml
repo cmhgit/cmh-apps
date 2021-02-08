@@ -44,21 +44,21 @@
     </item>
     
     <item>
-      <title>Terms and Conditions</title>
-      <link>http://cmh-apps.com/terms/</link>
-      <pubDate>Wed, 20 Jan 2021 17:49:02 -0800</pubDate>
-      
-      <guid>http://cmh-apps.com/terms/</guid>
-      <description>Terms and Conditions</description>
-    </item>
-    
-    <item>
       <title>Privacy Policy</title>
       <link>http://cmh-apps.com/privacy/</link>
       <pubDate>Wed, 20 Jan 2021 17:48:57 -0800</pubDate>
       
       <guid>http://cmh-apps.com/privacy/</guid>
       <description>Privacy Policy</description>
+    </item>
+    
+    <item>
+      <title>Terms and Conditions</title>
+      <link>http://cmh-apps.com/terms/</link>
+      <pubDate>Wed, 20 Jan 2021 17:49:02 -0800</pubDate>
+      
+      <guid>http://cmh-apps.com/terms/</guid>
+      <description>Terms and Conditions</description>
     </item>
     
   </channel>
