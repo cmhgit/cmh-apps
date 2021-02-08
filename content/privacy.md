@@ -3,8 +3,9 @@ title: "Privacy Policy"
 date: 2021-01-20T17:48:57-08:00
 lastmod: 2019-07-18
 icon: "/images/privacy.jpg"
+categories: ["Policy"]
 tags: ["privacy policy"]
-weight: 100
+weight: 90
 draft: false
 summary: "Privacy Policy"
 ---

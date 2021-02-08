@@ -25,7 +25,7 @@ paginate = 2
 ## sectionPagesMenu = "main"
 [[menu.main]]
   name = "Terms"
-  weight = 10
+  weight = 30
   url = "/terms/"
 
 [[menu.main]]
@@ -35,12 +35,17 @@ paginate = 2
 
 [[menu.main]]
   name = "Tags"
-  weight = 30
+  weight = 50
   url = "/tags/"
 
 [[menu.main]]
-  name = "Home"
+  name = "Categories"
   weight = 40
+  url = "/categories/"
+
+[[menu.main]]
+  name = "Home"
+  weight = 10
   url = "/"
 
 ## GDPR

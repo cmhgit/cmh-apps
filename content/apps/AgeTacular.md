@@ -3,6 +3,7 @@ title: "AgeTacular"
 date: 2021-01-22T00:45:54-08:00
 icon: "/images/AgeTacularIcon.svg"
 draft: false
+categories: ["Apps"]
 tags: ["apps"]
 appStore: "app-id=1252149243"
 weight: 10
