@@ -1,40 +1,39 @@
-<div class="col-lg">
-<div class="card text-white bg-transparent border-0 mb-4 w-100">
-  <div class="row g-0">
-    <div class="col-md-2">
-      <a href="{{ .Permalink }}">
+<div class="col">
+  <div class="card bg-transparent border-0 h-100">
+      <p>&nbsp;</p>
+      <a href="{{ .Permalink }}" class="text-center">
       {{ with .Params.icon }}
-          <img src="{{ . }}" class="card-img w-100 mx-auto d-block">
+          <img src="{{ . }}" class="card-img-top" alt="..." style="max-width: 300px;">
       {{ else }}
           <p>&nbsp;</p>
       {{ end }}
       </a>
-    </div>
-    <div class="col-md-10">
-      <div class="card-body">
-        {{ if .Params.lastmod }}
+      {{ if .Params.lastmod }}
+        <div class="card-body">
           <a href="{{ .Permalink }}"><h3 class="card-title">{{ .Title }}</h3></a>
           {{ with .Summary }}
           <p class="card-text">{{ . }}</p>
           {{ end }}
-          <p class="card-text"><small class="text-muted">{{ .Params.lastmod.Format "2 Jan 2006" }}</small></p>
-          <p class="card-text text-start"><a href="{{ .Permalink }}" class="btn btn-outline-secondary">More →</a></p>
-
-        {{ else if .Params.Date }}
+        </div>
+        <div class="card-footer d-flex justify-content-start">
+          <a href="{{ .Permalink }}" class="small text-muted">Last updated: {{ .Params.lastmod.Format "2 Jan 2006" }} →</a>
+        </div>
+      {{ else if .Params.Date }}
+        <div class="card-body">
           <a href="{{ .Permalink }}"><h3 class="card-title">{{ .Title }}</h3></a>
           {{ with .Summary }}
           <p class="card-text">{{ . }}</p>
           {{ end }}
-          <p class="card-text"><small class="text-muted">{{ .Params.Date.Format "2 Jan 2006" }}</small></p>
-          <p class="card-text text-start"><a href="{{ .Permalink }}" class="btn btn-outline-secondary">More →</a></p>
-
-        {{ else }}
+        </div>
+        <div class="card-footer d-flex justify-content-start">
+          <a href="{{ .Permalink }}" class="small text-muted">Last updated: {{ .Params.lastmod.Format "2 Jan 2006" }} →</a>
+        </div>
+      {{ else }}
+        <div class="card-body">
           <p class="card-text text-start"><a href="{{ .Permalink }}" class="btn btn-outline-secondary">{{ .Title }}</a></p>
-        {{ end }}
-      </div>
-    </div>
+        </div>
+      {{ end }}
   </div>
-</div>
 </div>
 
 {{/* <p class="card-text"><small class="text-muted">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .FuzzyWordCount }} Words</small></p> */}}
