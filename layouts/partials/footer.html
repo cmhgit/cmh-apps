@@ -1,12 +1,7 @@
 <div class="container-fluid">
   <div class="container-fluid">
+    <p>&nbsp;</p>
     <hr>
-
-    {{/* <div class="row">
-      <div class="col">
-        <p>&nbsp;</p>
-      </div>
-    </div> */}}
 
     <div class="row">
       <div class="col">
@@ -14,16 +9,10 @@
       </div>
     </div>
 
-    {{/* <div class="row">
-      <div class="col">
-        <p>&nbsp;</p>
-      </div>
-    </div> */}}
-
     {{/* display on all but small */}}
     <div class="d-none d-sm-block">
       <div class="row">
-        <div class="col-md-auto">
+        <div class="col-lg-auto">
           <p class="h6 text-center fw-light">Copyright &copy; {{ now.Format "2006" }} Chad Hughes. All rights reserved.</p>
         </div>
         {{ range .Site.Menus.main }}
@@ -41,7 +30,7 @@
             <p class="h6 text-center fw-light"><a href="{{ .URL }}">{{ .Name }}</a></p>
           </div>
         {{ end }}
-        <div class="col-md-auto">
+        <div class="col-lg-auto">
           <p class="h6 text-center fw-light">&copy; {{ now.Format "2006" }} Chad Hughes. All rights reserved.</p>
         </div>
       </div>
