@@ -28,10 +28,11 @@ summary: "Simple and elegant age tracking of family, loved ones, and past and fu
 
 {{< figure src="/images/AgeTaculariPhone.png" width="300" link="https://apps.apple.com/us/app/agetacular/id1252149243">}}
 
-{{< comment QRcode >}}
-## Scan QR code to download
+## Download
+{{< figure src="/images/appStoreQR.svg" width="200" link="https://apps.apple.com/us/app/agetacular/id1252149243">}}
 
-[![Text](/images/appStoreQR.svg "AgeTacular")](https://apps.apple.com/us/app/agetacular/id1252149243)
+{{< comment Download >}}
+{{< figure src="/images/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" width="300" link="https://apps.apple.com/us/app/agetacular/id1252149243">}}
 {{< /comment >}}
 
 {{< comment Social >}}
