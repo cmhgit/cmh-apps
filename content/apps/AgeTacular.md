@@ -14,7 +14,7 @@ summary: "Simple and elegant age tracking of family, loved ones, and past and fu
 - **Date Countdown:** Track future events with the years, months and days remaining
 - **Elegantly Clean:** Just the years, months and days in a highly condensed, simplified format (e.g., 4y5m6d for 4 years, 5 months and 6 days), or quickly jump into the detail view for additional information
 - **Saves:** Your birthdays and events are saved for future reference (not a one-time-use, date-to-date calculator)
-- **iCloud Syncing:** Sync between any supported devices using the same iCloud account
+- **iCloud® Syncing:** Sync between any supported devices using the same iCloud account
 - **Sorts:** Set sort preferences to sort by event age or by name, and to specify whether to reverse the sort logic
 - **Shares:** Supports standard iOS share sheet functionality to quickly send information to any application that accepts text from a share sheet (e.g., messages, mail, notes, etc.)
 - **Additional Detail:** Switch on the additional detail setting to tell the share sheet to share additional age and event detail, if desired, or leave the default setting to share a condensed level of detail with supporting apps
