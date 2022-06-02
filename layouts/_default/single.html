@@ -1,0 +1,33 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+  <div class=container-fluid>
+    <p>&nbsp;</p>
+    <div class=container-fluid>
+        <div class="row">
+          {{ if .Params.icon }}
+            <div class="col-sm-3 align-self-end" style="max-width: 300px;">
+              <img src="{{ .Params.icon }}" class="img-fluid">
+            </div>
+            <div class="col-sm-auto">
+              <p>&nbsp;</p>
+            </div>
+            <div class="col-sm align-self-end">
+              <p class="h1">{{ .Title }}</p>
+            </div>
+          {{ else }}
+            <div class="col-sm align-self-end">
+              <p class="h1">{{ .Title }}</p>
+            </div>
+          {{ end }}
+        </div>
+    </div>
+
+    <div class="container-fluid">
+      <p>&nbsp;</p>
+      {{ .Content }}
+    </div>
+
+  </div>
+{{ end }}

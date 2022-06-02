@@ -1,0 +1,83 @@
+baseURL = "http://cmh-apps.com/"
+languageCode = "en-us"
+title = "cmh:apps"
+
+#summaryLength = 60
+paginate = 2
+[params]
+  homeNumPosts = 2
+
+#[social]
+  #twitter = "https://twitter.com/cmhApps"
+  #instagram = "https://www.instagram.com/cmhapps/"
+  #github = "https://github.com/forestryio/novela-hugo-starter"
+  #linkedin= "https://www.linkedin.com/company/forestry.io"
+  #dribbble = "#"
+  #youtube = "#"
+
+#[taxonomies]
+#  tag = "tags"
+
+#[params]
+#  custom_css = ["css/myCSS.css"]
+#  custom_css = ["css/myCSS.css", "css/bar.css"]
+
+## sectionPagesMenu = "main"
+[[menu.main]]
+  name = "Terms"
+  weight = 30
+  url = "/terms/"
+
+[[menu.main]]
+  name = "Privacy"
+  weight = 20
+  url = "/privacy/"
+
+[[menu.main]]
+  name = "Tags"
+  weight = 50
+  url = "/tags/"
+
+[[menu.main]]
+  name = "Categories"
+  weight = 40
+  url = "/categories/"
+
+[[menu.main]]
+  name = "Home"
+  weight = 10
+  url = "/"
+
+## GDPR
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false

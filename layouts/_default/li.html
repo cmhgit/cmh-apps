@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <div class="container-fluid">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ with .Params.lastmod }}
+        <div>{{ .Format "Mon, Jan 2, 2006" }}</div>
+      {{ else }}
+        <div><small>{{ .Date.Format "Mon, Jan 2, 2006" }}</small></div>
+      {{ end }}
+  </div>
+</div>

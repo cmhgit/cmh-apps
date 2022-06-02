@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container-fluid">
+  <p>&nbsp;</p>
+  <div class="container-fluid">
+    <p class="h1">{{ .Title }}</p>
+    <hr>
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="justify-content: start;">
+    {{ range .Pages }}
+        {{ .Render "summary"}}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

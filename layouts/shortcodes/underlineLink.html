@@ -1,0 +1,5 @@
+{{ if .IsNamedParams }}
+<a href="{{.Get "href"}}" alt="" style="text-decoration: underline;">{{.Get "text"}}</a>
+{{ else }}
+<a href="{{.Get 0}}" alt="" style="text-decoration: underline;">{{.Get 0}}</a>
+{{ end }}

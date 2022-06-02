@@ -1,0 +1,38 @@
+{{ define "main" }}
+      <div class="container-fluid">
+        <div class="container-fluid">
+          {{ with .Params.icon }}
+            <p class="text-center"><img src="{{ . }}" class="img-fluid"></p>
+          {{ else }}
+            <p>&nbsp;</p>
+            <p class="h1 text-center">{{.Title}}</p>
+          {{ end }}
+        </div>
+        <div class="container-fluid">
+          {{ with .Params.subtitle }}
+            <p class="text-center">{{.}}</p>
+          {{ end }}
+          {{/*  <p>&nbsp;</p>
+          <hr>  */}}
+        </div>
+      </div>
+      <div class="container-fluid">
+        {{.Content}}
+      </div>
+      <div class="container-fluid">
+        <p>&nbsp;</p>
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="justify-content: space-around;">
+            {{ if .Site.Params.homeNumPosts }}
+              {{ range first .Site.Params.homeNumPosts .Site.RegularPages }}
+                  {{ .Render "summary"}}
+              {{ end }}
+            {{ else }}
+              {{ range first 4 .Site.RegularPages }}
+                  {{ .Render "summary"}}
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+{{ end }}

@@ -1,0 +1,39 @@
+<div class="col">
+  <div class="card bg-transparent border-0 h-100">
+      <p>&nbsp;</p>
+      <a href="{{ .Permalink }}" class="text-center">
+      {{ with .Params.icon }}
+          <img src="{{ . }}" class="card-img-top" alt="..." style="max-width: 300px;">
+      {{ else }}
+          <p>&nbsp;</p>
+      {{ end }}
+      </a>
+      {{ if .Params.lastmod }}
+        <div class="card-body">
+          <a href="{{ .Permalink }}"><h3 class="card-title">{{ .Title }}</h3></a>
+          {{ with .Summary }}
+          <p class="card-text">{{ . }}</p>
+          {{ end }}
+        </div>
+        <div class="card-footer d-flex justify-content-start">
+          <a href="{{ .Permalink }}" class="small text-muted">Last updated: {{ .Params.lastmod.Format "2 Jan 2006" }} →</a>
+        </div>
+      {{ else if .Params.Date }}
+        <div class="card-body">
+          <a href="{{ .Permalink }}"><h3 class="card-title">{{ .Title }}</h3></a>
+          {{ with .Summary }}
+          <p class="card-text">{{ . }}</p>
+          {{ end }}
+        </div>
+        <div class="card-footer d-flex justify-content-start">
+          <a href="{{ .Permalink }}" class="small text-muted">Last updated: {{ .Params.lastmod.Format "2 Jan 2006" }} →</a>
+        </div>
+      {{ else }}
+        <div class="card-body">
+          <p class="card-text text-start"><a href="{{ .Permalink }}" class="btn btn-outline-secondary">{{ .Title }}</a></p>
+        </div>
+      {{ end }}
+  </div>
+</div>
+
+{{/* <p class="card-text"><small class="text-muted">{{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .FuzzyWordCount }} Words</small></p> */}}

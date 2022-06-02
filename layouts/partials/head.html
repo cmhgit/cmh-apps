@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  {{/* <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title> */}}
+  <title>{{ block "title" . }}
+            {{ if eq .Params.Title .Site.Title}}
+              {{ .Site.Title }}
+            {{ else }}
+              {{ with .Params.Title }}
+                {{ . }} |
+              {{ end }}
+            {{ .Site.Title }}
+            {{ end }}
+         {{ end }}</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ with .Params.appStore }}
+    {{- safeHTML (printf "<meta name=\"apple-itunes-app\" content=\"%s\">\n  " .) -}}
+  {{ end -}}
+  <link rel="icon" href="/images/favicon.svg">
+{{/*  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> */}}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+{{/* <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> */}}
+{{/* <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"> */}}
