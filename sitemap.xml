@@ -32,13 +32,13 @@
     <loc>http://cmh-apps.com/tags/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://cmh-apps.com/tags/apps/</loc>
+    <lastmod>2021-01-22T00:45:54-08:00</lastmod>
+  </url><url>
     <loc>http://cmh-apps.com/categories/apps/</loc>
     <lastmod>2021-01-22T00:45:54-08:00</lastmod>
   </url><url>
     <loc>http://cmh-apps.com/apps/</loc>
-    <lastmod>2021-01-22T00:45:54-08:00</lastmod>
-  </url><url>
-    <loc>http://cmh-apps.com/tags/apps/</loc>
     <lastmod>2021-01-22T00:45:54-08:00</lastmod>
   </url><url>
     <loc>http://cmh-apps.com/categories/</loc>
@@ -53,10 +53,10 @@
     <loc>http://cmh-apps.com/tags/privacy-policy/</loc>
     <lastmod>2019-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://cmh-apps.com/categories/support/</loc>
+    <loc>http://cmh-apps.com/tags/support/</loc>
     <lastmod>2019-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://cmh-apps.com/tags/support/</loc>
+    <loc>http://cmh-apps.com/categories/support/</loc>
     <lastmod>2019-07-18T00:00:00+00:00</lastmod>
   </url>
 </urlset>
