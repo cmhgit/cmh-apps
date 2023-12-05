@@ -6,60 +6,49 @@
     <description>Recent content on cmh:apps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://cmh-apps.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://cmh-apps.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AgeTacular</title>
       <link>http://cmh-apps.com/apps/agetacular/</link>
       <pubDate>Fri, 22 Jan 2021 00:45:54 -0800</pubDate>
-      
       <guid>http://cmh-apps.com/apps/agetacular/</guid>
       <description>Simple and elegant age tracking of family, loved ones, and past and future events.</description>
     </item>
-    
     <item>
       <title>TBD</title>
       <link>http://cmh-apps.com/apps/tbd/</link>
       <pubDate>Thu, 21 Jan 2021 00:45:58 -0800</pubDate>
-      
       <guid>http://cmh-apps.com/apps/tbd/</guid>
       <description>Coming Soon!</description>
     </item>
-    
     <item>
       <title>AgeTacular Support</title>
       <link>http://cmh-apps.com/posts/agetacular-support/</link>
       <pubDate>Wed, 20 Jan 2021 17:48:57 -0800</pubDate>
-      
       <guid>http://cmh-apps.com/posts/agetacular-support/</guid>
       <description>Support &amp;amp; FAQ</description>
     </item>
-    
     <item>
       <title>Apps for iPhone and iPad</title>
       <link>http://cmh-apps.com/posts/about/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
-      
       <guid>http://cmh-apps.com/posts/about/</guid>
       <description>About</description>
     </item>
-    
     <item>
       <title>Privacy Policy</title>
       <link>http://cmh-apps.com/privacy/</link>
       <pubDate>Wed, 20 Jan 2021 17:48:57 -0800</pubDate>
-      
       <guid>http://cmh-apps.com/privacy/</guid>
       <description>Privacy Policy</description>
     </item>
-    
     <item>
       <title>Terms and Conditions</title>
       <link>http://cmh-apps.com/terms/</link>
       <pubDate>Wed, 20 Jan 2021 17:49:02 -0800</pubDate>
-      
       <guid>http://cmh-apps.com/terms/</guid>
       <description>Terms and Conditions</description>
     </item>
-    
   </channel>
 </rss>
